@@ -63,7 +63,6 @@ class Window(tk.Tk):
 
 
     # 計算bmi並顯示訊息
-
     def cal_BMI(self,height,weight):
         bmi_value = round(float(weight)/(float(height)/100)**2,2)
         if bmi_value < 18.5:  
