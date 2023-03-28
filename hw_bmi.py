@@ -60,7 +60,7 @@ class Window(tk.Tk):
         comitButton=ttk.Button(self.bottomFrame,text="計算",command=self.Data_click)
         comitButton.grid(row=6,column=1,sticky=tk.W)
     
-    
+    #計算BMI
     def cal_BMI(self,height,weight):
         bmi_value = round(float(weight)/(float(height)/100)**2,2)
         if bmi_value < 18.5:  # 使用邏輯判斷
