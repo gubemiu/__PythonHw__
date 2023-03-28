@@ -60,60 +60,7 @@ class Window(tk.Tk):
         comitButton=ttk.Button(self.bottomFrame,text="計算",command=self.Data_click)
         comitButton.grid(row=6,column=1,sticky=tk.W)
     
-
-
-    # 計算bmi並顯示結果
-    '''
-    def Bmi(self,height,weight):
-        bmi=float(weight)/(float(height)/100)**2
-        if   bmi<18.5:
-            message="體重過輕"
-        elif bmi<24:
-            message="正常範圍"
-        elif bmi<27:
-            message="異常範圍 : 過重"
-        elif bmi<30:
-            message="異常範圍 : 輕度肥胖"
-        elif bmi<35:
-            message="異常範圍 : 中度肥胖"
-        else:
-            message="異常範圍 : 重度肥胖"
-        self.messageText.configure(state=tk.NORMAL)
-        self.messageText.delete('1.0', tk.END)
-        self.messageText.insert("insert",f"BMI:{bmi: .5f}, {message}") 
-        self.messageText.configure(state=tk.DISABLED)  
-
-    def Data_wrong(self,height,weight):
-        self.messageText.configure(state=tk.NORMAL)                  
-        self.messageText.delete('1.0', tk.END)
-        #if not height.isdigit():
-        if not self.is_number(height):
-            self.messageText.insert("insert",f"身高:'{height}', 輸入錯誤\n")   
-            self.heightVar.set('')
-        #if not weight.isdigit():
-        if not self.is_number(weight):
-            self.messageText.insert("insert",f"體重:'{weight}', 輸入錯誤\n") 
-            self.weightVar.set('')        
-        self.messageText.configure(state=tk.DISABLED)  
-
-    def is_number(self,string):
-        try:
-            float(string)
-            return True
-        except Exception:
-            return False
-
-
-    def Data_click(self):                 
-        #if self.heightVar.get().isdigit() and self.weightVar.get().isdigit(): 
-        if self.is_number(self.heightVar.get()) and self.is_number(self.weightVar.get()):
-            self.Bmi( self.heightVar.get(), self.weightVar.get() )
-        else:
-            self.Data_wrong( self.heightVar.get(), self.weightVar.get() ) 
-
-
-
-'''
+    
     def cal_BMI(self,height,weight):
         bmi_value = round(float(weight)/(float(height)/100)**2,2)
         if bmi_value < 18.5:  # 使用邏輯判斷
