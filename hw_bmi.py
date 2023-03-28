@@ -2,8 +2,6 @@ import tkinter as tk
 from tkinter import ttk
 
 #產生BMI計算器視窗
-
-
 class Window(tk.Tk):
     def __init__(self,**kwargs):
         super().__init__(**kwargs)
