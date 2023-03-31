@@ -46,8 +46,7 @@ class Window(tk.Tk):
 
         ttk.Label(buttomFrame, text='出生年月日:', style='gridLabel.TLabel').grid(
             column=0, row=1, sticky=tk.E)
-        ttk.Label(buttomFrame, text='(2000/03/01)',
-                  style='gridLabel.TLabel').grid(column=0, row=2, sticky=tk.E)
+        ttk.Label(buttomFrame, text='(2000/03/01)',style='gridLabel.TLabel').grid(column=0, row=2, sticky=tk.E)
         birthEntry = ttk.Entry(
             buttomFrame, style='gridEntry.TEntry', textvariable=self.birthStringVar)
         birthEntry.grid(column=1, row=1, sticky=tk.W, padx=10, rowspan=2)
