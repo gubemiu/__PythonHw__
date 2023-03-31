@@ -14,7 +14,6 @@ class Window(tk.Tk):
         ttkStyle.theme_use('default')
         ttkStyle.configure('gridLabel.TLabel', font=('Helvetica', 16), foreground='#666666')
         ttkStyle.configure('gridEntry.TEntry', font=('Helvetica', 16))
-        ttkStyle.configure('back.TFrame', background="#edcaca") # 可修改，back.TFrame=>back可以改，但.TFrame一定要這樣寫
 
         mainFrame = ttk.Frame(self)
         mainFrame.pack(expand=True, fill=tk.BOTH, padx=30, pady=30)
