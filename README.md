@@ -1,5 +1,3 @@
-#這是Window_Widgets作業練習
-=======
 # 這是BMI產生器 
 
 add：BMI message、年紀、星座 \
