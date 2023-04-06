@@ -1,4 +1,5 @@
 import tkinter as tk
+<<<<<<< HEAD
 #from tkinter import ttk
 from parts import TopFrame,MedianFrame
 
@@ -25,5 +26,11 @@ def main():
     window.mainloop() #要讓主程式一直執行
 
 
+=======
+from tkinter import ttk
+
+def main():
+    pass
+>>>>>>> 47e2d7aa5e418c8c27e5de4eb8f63807b17601b3
 if __name__=='__main__':
     main()
